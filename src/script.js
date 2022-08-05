@@ -11,8 +11,8 @@
     document.querySelector('#name').innerHTML = data[0].firstName; */
     fetch(`/api/users-get`)
     .then(res => {
-        console.log("First user in the array:");
-        console.log(res[0]);
+        console.log("Array of users: ");
+        console.log(res);
         
 })
 }())
