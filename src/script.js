@@ -10,10 +10,9 @@
     console.log(data[0].firstName);
     document.querySelector('#name').innerHTML = data[0].firstName; */
     fetch(`/api/users-get`)
-    .then(res => res.json())
-    .then(json => {
+    .then(res => {
         console.log("First user in the array:");
-        console.log(json[0]);
+        console.log(res[0]);
         
 })
 }())
